@@ -1,6 +1,6 @@
 This project is a responsive landing page for "Fama Barber Shop & Beauty Salon," built as part of the Election Task (or a similar development challenge). The page is inspired by modern barber shop website aesthetics and aims to showcase key business information and services effectively.
 
-**Live Demo:** [https://fama-barber-landing.vercel.app/](https://fama-barber-landing.vercel.app/)
+**Live Demo:**https://fama-barber-sallon.vercel.app/
 *(Remember to replace with your actual Vercel deployment link)*
 
 ---
@@ -44,11 +44,9 @@ This project is a responsive landing page for "Fama Barber Shop & Beauty Salon,"
 To run this project locally:
 
 1.  **Clone the repository (if applicable):**
-    ```bash
-    git clone https://github.com/your-username/fama-barber-landing-page.git
+    https://github.com/sitansuss/fama-barber-landing
     cd fama-barber-landing-page
-    ```
-    *(Replace `your-username/fama-barber-landing-page` with your actual repository URL)*
+    
 
 2.  **Install dependencies:**
     This project uses Tailwind CSS, which requires Node.js and npm.
