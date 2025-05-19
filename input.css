@@ -1,0 +1,49 @@
+/* input.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-light-bg-main text-light-text; /* Light mode: main page background is white */
+    scroll-behavior: smooth;
+  }
+
+  html.dark {
+    @apply bg-dark-bg text-dark-text; 
+  }
+
+  /* ... (rest of the base layer remains the same) ... */
+  body, header, section, footer, div, button, a, p, h1, h2, h3, h4, h5, h6, span, li, main, nav, aside {
+    @apply transition-colors duration-300 ease-in-out;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-light-heading dark:text-dark-heading;
+  }
+  p, li { 
+    @apply text-light-text dark:text-dark-text;
+  }
+  .text-secondary {
+    @apply text-light-secondary-text dark:text-dark-secondary-text;
+  }
+  a:not([class*="bg-"]):not([class*="border-"]) { 
+     @apply text-light-accent dark:text-dark-accent hover:opacity-80;
+  }
+}
+
+/* Hero section specific styles (overlay remains important) */
+.hero-section {
+  background-image: url('../img/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.hero-overlay {
+  @apply absolute inset-0;
+}
+html:not(.dark) .hero-overlay {
+  @apply bg-black opacity-40; 
+}
+html.dark .hero-overlay {
+  @apply bg-black opacity-60;
+}
